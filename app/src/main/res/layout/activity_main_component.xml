@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cardview_light_background"
+    tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/upperRL"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="10dp">
+
+                <com.mancj.materialsearchbar.MaterialSearchBar
+                    android:id="@+id/searchBar"
+                    style="@style/MaterialSearchBarLight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:mt_hint="Search for ..."
+                    app:mt_maxSuggestionsCount="0"
+                    app:mt_navIconEnabled="true"
+                    app:mt_placeholder="Search Pix"
+                    app:mt_roundedSearchBarEnabled="true"
+                    app:mt_speechMode="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lowerRL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="80dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/activity_main_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/activity_main_progress"
+            android:layout_width="76dp"
+            android:layout_height="71dp"
+            android:layout_gravity="center"
+            android:indeterminate="false" />
+
+        <TextView
+            android:id="@+id/no_results_text"
+            style="@style/NoResultsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_results"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/welcome_text"
+            style="@style/WelcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/welcome_text"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

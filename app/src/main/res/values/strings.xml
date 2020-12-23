@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Search Pix</string>
+    <string name="search">Search Image</string>
+    <string name="PIXABAY_API_KEY">19615131-acc6ec67c9db418d42398330b</string>
+    <string name="no_internet">Opps, Please check internet connection…</string>
+    <string name="error">Opps, Something is not right…</string>
+    <string name="retry">RETRY</string>
+    <string name="no_results">No results found :(</string>
+    <string name="welcome_text">Get Started with a simple search :)</string>
+</resources>

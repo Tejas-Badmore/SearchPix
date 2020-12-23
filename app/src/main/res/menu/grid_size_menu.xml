@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/grid_size2" android:title="Grid Column: 2"/>
+    <item android:id="@+id/grid_size3" android:title="Grid Column: 3"/>
+    <item android:id="@+id/grid_size4" android:title="Grid Column: 4"/>
+</menu>
